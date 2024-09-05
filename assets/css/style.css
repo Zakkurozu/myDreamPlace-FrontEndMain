@@ -49,7 +49,6 @@ header{
     border-radius: 5px;
     padding: 1.2rem 0;
     overflow: hidden;
-    /* end mobile */
     display: flex;
     gap: 1.3rem;
     align-items: center;
@@ -213,29 +212,12 @@ main{
 .parent .child{
     padding: .5rem .5rem;
 }
-.parent .child:nth-child(1){
+.parent .child:nth-child(1), .child:nth-child(4), .child:nth-child(5){
     width: 100%;
-    /* background-color: red; */
     box-sizing: border-box;
 }
-.parent .child:nth-child(2){
+.parent .child:nth-child(2), .child:nth-child(3){
     width: 50%;
-    /* background-color: blue; */
-    box-sizing: border-box;
-}
-.parent .child:nth-child(3){
-    width: 50%;
-    /* background-color: yellow; */
-    box-sizing: border-box;
-}
-.parent .child:nth-child(4){
-    width: 100%;
-    /* background-color: green; */
-    box-sizing: border-box;
-}
-.parent .child:nth-child(5){
-    width: 100%;
-    /* background-color: brown; */
     box-sizing: border-box;
 }
 
@@ -313,20 +295,123 @@ input[type="submit"]{
     .parent .child{
         padding: .5rem .5rem;
     }
-    .parent .child:nth-child(1){
+    .parent .child:nth-child(1), .child:nth-child(4){
         width: 80%;
     }
-    .parent .child:nth-child(2){
-        width: 60%;
-    }
-    .parent .child:nth-child(3){
-        width: 60%;
-    }
-    .parent .child:nth-child(4){
-        width: 80%;
-    }
-    .parent .child:nth-child(5){
+    .parent .child:nth-child(2), .parent .child:nth-child(3), .parent .child:nth-child(5){
         width: 60%;
     }
 }
 /* ================= hero ================ */
+
+/* ================= section pertama ================ */
+.section-pertama{
+    padding: 5rem .7rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+.head{
+    margin-bottom: 2rem;
+}
+.head h2{
+    font-size: 1.5rem;
+    margin: 0 0 .6rem 0;
+}
+.head p{
+    font-size: .875rem;
+    letter-spacing: .02rem;
+}
+
+.content .wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+.content .wrap .wrapper{
+    width: 48%;
+}   
+
+.content .wrap .wrapper a{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    text-decoration: none;
+    color: #000000;
+}
+.content .wrap .wrapper .sct1-thmbnail{
+    width: 100%;
+    height: 8.5rem;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.content .wrap .wrapper .sct1-thmbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.content .wrap .wrapper .sct1-desc{
+    display: flex;
+    flex-direction: column;
+    row-gap: .1rem;
+}
+.content .wrap .wrapper .sct1-desc h4{
+    font-size: 1.125rem;
+    text-transform: capitalize;
+}
+.content .wrap .wrapper .sct1-desc p{
+    font-size: .875rem;
+}
+
+@media screen and (min-width: 768px) {
+    .section-pertama{
+        padding: 7rem 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .head h2{
+        font-size: 1.625rem;
+    }
+    .head p{
+        font-size: 1.2rem;
+    }
+
+    .content .wrap .wrapper .sct1-thmbnail{
+        height: 14.375rem;
+    }
+    .content .wrap .wrapper .sct1-desc{
+        row-gap: .3rem;
+    }
+    .content .wrap .wrapper .sct1-desc h4{
+        font-size: 1.25rem;
+    }
+    .content .wrap .wrapper .sct1-desc p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-pertama{
+        padding: 3rem 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .head h2{
+        font-size: 1.75rem;
+    }
+    .head p{
+        font-size: 1.2rem;
+        max-width: 70%;
+    }
+
+    .content .wrap{
+        flex-wrap: nowrap;
+    }
+    .content .wrap .wrapper{
+        width: 24%;
+    }
+}
+/* ================= section pertama ================ */
