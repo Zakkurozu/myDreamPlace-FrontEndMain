@@ -8,10 +8,11 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    max-width: fit-content;
+}
+.container{
+    max-width: 83rem;
     margin: auto;
 }
-
 
 /* ================ header ================ */
 header{
@@ -27,6 +28,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 83rem;
+    margin: auto;
 }
 .logo a{
     display: flex;
@@ -159,6 +162,8 @@ main{
     height: 90%;
     width: 100%;
     border-radius: 10px;
+    max-width: 83rem;
+    margin: auto;
 }
 .bg-layers{
     background-color: rgba(0, 0, 0, 0.3);
@@ -272,7 +277,7 @@ input[type="submit"]{
 
 @media screen and (min-width: 1024px) {
     main{
-        height: 90vh;
+        height: 36.25rem;
         padding: 2rem 4rem;
     }
 
@@ -423,13 +428,11 @@ input[type="submit"]{
     padding: 2rem .7rem;
     padding-bottom: 2rem;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
 }
 
 .section-kedua .title2 h2{
     font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .section-kedua .wrap2{
@@ -494,6 +497,7 @@ input[type="submit"]{
     }
     .section-kedua .title2 h2{
         font-size: 1.625rem;
+        margin-bottom: 2rem;
     }
     .section-kedua .wrap2::after {
         content: '';
@@ -530,6 +534,7 @@ input[type="submit"]{
     }
     .section-kedua .title2 h2{
         font-size: 1.75rem;
+        margin-bottom: 2.5rem;
     }
     .section-kedua .wrap2::after {
         display: none;
