@@ -251,6 +251,7 @@ input{
 input[type="submit"]{
     color: #ffffff;
     font-weight: bold;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -687,3 +688,219 @@ input[type="submit"]{
     }
 }
 /* ================ section ketiga ================ */
+
+/* ================ section keempat ================ */
+.section-keempat{
+    padding: 3rem .7rem;
+}
+.section-keempat h4{
+    color: #ffffff;
+    font-size: .9rem;
+    font-weight: 600;
+    width: 70%;
+}
+.section-keempat h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.section-keempat a{
+    text-decoration: none;
+    color: #2e7fe9;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.sct4-thumbnail{
+    width: 100%;
+    height: 11rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.sct4-layers{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+}
+.flex4{
+    display: flex;
+    flex-direction: column;
+    row-gap: .8rem;
+    height: 100%;
+    justify-content: center;
+}
+.flex4 a{
+    width: fit-content;
+    background-color: #2e7fe9;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: .6rem;
+    color: #ffffff;
+}
+.sct4-additional{
+    margin-top: 4rem;
+    display: flex;
+    row-gap: .6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .section-keempat{
+        padding: 3rem 3rem;
+    }
+    .sct4-thumbnail{
+        height: 17rem;
+    }
+    .sct4-layers{
+        padding: 2.3rem;
+    }
+    .section-keempat h4{
+        font-size: 1.3rem;
+        font-weight: 500;
+        width: 60%;
+    }
+    .section-keempat h3{
+        font-size: 1.5rem;
+    }
+    .section-keempat a{
+        font-size: .9rem;
+    }
+    .flex4{
+        row-gap: 1rem;
+    }
+    .flex4 a{
+        padding: .5rem 1rem;
+        font-size: .9rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-keempat{
+        padding: 3rem 4rem;
+    }
+    .sct4-thumbnail{
+        height: 20rem;
+    }
+    .sct4-layers{
+        padding: 5rem;
+    }
+    .section-keempat h4{
+        font-size: 1.7rem;
+        font-weight: 600;
+        width: 60%;
+    }
+    .section-keempat h3{
+        font-size: 1.5rem;
+    }
+    .section-keempat a{
+        font-size: .9rem;
+    }
+    .flex4{
+        row-gap: 1.3rem;
+    }
+    .section-keempat .flex4 a{
+        padding: .8rem 1.1rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+/* ================ section keempat ================ */
+
+/* ================ footer ================ */
+footer{
+    background-color: #Fafafa;
+}
+.foot{
+    width: 100%;
+    padding: 2.5rem .7rem;
+}
+footer a{
+    text-decoration: none;
+    color: #141414;
+}
+footer li{
+    list-style: none;
+    margin: .6rem 0;
+    font-size: .8125rem;
+}
+footer h3{
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+footer h4{
+    font-size: 1rem;
+    font-weight: 500;
+}
+footer p{
+    font-size: .8125rem;
+    font-weight: 400;
+}
+footer .active{
+    color: #2F80ED !important;
+}
+
+.foot-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.foot-wrapper{
+    width: 50%;
+}
+.foot-wrapper:nth-child(1){
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.foot-head_title{
+    display: flex;
+    gap: .5rem;
+}
+.foot-head_title .kanan{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+.foot-link{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.cprght{
+    background-color: #ebebeb;
+    padding: 1rem 0;
+}
+.cprght p{
+    text-align: center;
+    font-size: .75rem;
+}
+
+@media screen and (min-width: 768px) {
+    .foot{
+        padding: 3rem 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .foot{
+        padding: 3rem 4rem;
+    }
+    .foot-wrap{
+        justify-content: space-between;
+    }
+    .foot-wrapper{
+        width: 19%;
+    }
+    .foot-wrapper:nth-child(1){
+        width: 20%;
+        margin-bottom: 1.5rem;
+    }
+}
+/* ================ footer ================ */
