@@ -28,7 +28,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 83rem;
   margin: auto;
 }
 .logo a {
@@ -64,10 +63,10 @@ header {
 .nav-links ul li a {
   text-decoration: none;
   color: #000000;
+  transition: all 0.2s ease-in-out;
 }
 .nav-links ul li a:hover {
   color: #2f80ed;
-  transition: all 0.2s ease-in-out;
 }
 .nav-links ul li .active {
   color: #2f80ed;
@@ -89,12 +88,12 @@ header {
   background-color: #2f80ed;
   border-radius: 4px;
   padding: 0.4rem 0.9rem;
+  transition: all 0.3s ease-in-out;
 }
 .act-btn .sgnin:hover {
   background-color: transparent;
   border: 1px solid #2f80ed;
   color: #2f80ed;
-  transition: all 0.3s ease-in-out;
 }
 .act-btn i {
   font-size: 1.3rem;
@@ -236,14 +235,23 @@ main {
   justify-content: start;
   background-color: #f2f2f2f2;
   border-radius: 4px;
+  border: 1px solid transparent;
   padding: 0.5rem 0.9rem;
   color: gray;
+  box-sizing: border-box;
 }
 .parent .child .wrapper:has(input[type="submit"]) {
-  background-color: #2f80ed;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.parent .child .wrapper:focus-within {
+  border: 1px solid #2f80ed;
 }
 input {
   font-size: 1rem;
+  font-weight: 500;
   width: 100%;
   border: none;
   outline: none;
@@ -254,6 +262,12 @@ input[type="submit"] {
   color: #ffffff;
   font-weight: bold;
   cursor: pointer;
+  background-color: #2f80ed;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+  background-color: #0a4ca3;
 }
 
 @media screen and (min-width: 768px) {
@@ -314,6 +328,9 @@ input[type="submit"] {
   .parent .child:nth-child(5) {
     width: 60%;
   }
+  .parent .child .wrapper:has(input[type="submit"]) {
+    height: 92%;
+  }
 }
 /* ================= hero ================ */
 
@@ -349,9 +366,17 @@ input[type="submit"] {
 .content .wrap .wrapper a {
   display: flex;
   flex-direction: column;
-  row-gap: 0.5rem;
+  row-gap: 0.3rem;
   text-decoration: none;
   color: #000000;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.content .wrap .wrapper a:hover {
+  transform: scale(0.99);
+  background-color: #ebebeb;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .content .wrap .wrapper .sct1-thmbnail {
   width: 100%;
@@ -365,9 +390,15 @@ input[type="submit"] {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transition: all 0.5s ease-in-out;
+}
+.content .wrap .wrapper a:hover .sct1-thmbnail img {
+  transform: scale(1.1);
+  filter: brightness(70%);
 }
 .content .wrap .wrapper .sct1-desc {
   display: flex;
+  padding: 8px 10px;
   flex-direction: column;
   row-gap: 0.1rem;
 }
@@ -464,15 +495,23 @@ input[type="submit"] {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.section-kedua a:hover .sct2-thumbnail {
+  transform: scale(0.98);
 }
 .section-kedua .sct2-layer {
   height: 100%;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   flex-direction: column;
   justify-content: end;
   overflow: hidden;
   padding: 1.2rem;
+  transition: all 0.5s ease-in-out;
+}
+.section-kedua a:hover .sct2-layer {
+  background-color: transparent;
 }
 .section-kedua .sct2-desc {
   display: flex;
@@ -600,6 +639,12 @@ input[type="submit"] {
   display: flex;
   flex-direction: column;
   row-gap: 0.6rem;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.wrapper3 a:hover {
+  transform: scale(0.97);
 }
 .wrapper3 .sct3-thumbnail {
   width: 100%;
@@ -609,6 +654,7 @@ input[type="submit"] {
   background-repeat: no-repeat;
   border-radius: 8px;
   overflow: hidden;
+  transition: all 0.5s ease-in-out;
 }
 .wrapper3 .sct3-layers {
   height: 100%;
@@ -700,9 +746,9 @@ input[type="submit"] {
 }
 .section-keempat h4 {
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 600;
-  width: 70%;
+  width: 85%;
 }
 .section-keempat h3 {
   font-size: 1rem;
@@ -732,7 +778,7 @@ input[type="submit"] {
 .flex4 {
   display: flex;
   flex-direction: column;
-  row-gap: 0.8rem;
+  row-gap: 1.2rem;
   height: 100%;
   justify-content: center;
 }
@@ -744,6 +790,12 @@ input[type="submit"] {
   font-size: 0.9rem;
   font-weight: 600;
   color: #ffffff;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+}
+.flex4 a:hover {
+  background-color: #0a4ca3;
+  outline: 1px solid #2e7fe9;
 }
 .sct4-additional {
   margin-top: 4rem;
@@ -877,6 +929,12 @@ footer .active {
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
+}
+.foot-link a {
+  transition: all 0.4s ease-in-out;
+}
+.foot-link a:hover {
+  color: #2f80ed;
 }
 
 .cprght {

@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
@@ -75,9 +79,11 @@
                       <i class="fa-solid fa-calendar-days"></i>
                       <input
                         type="text"
+                        inputmode="none"
                         placeholder="Check in date"
                         name=""
-                        id=""
+                        id="date-pick"
+                        readonly
                       />
                     </div>
                   </div>
@@ -86,9 +92,11 @@
                       <i class="fa-solid fa-calendar-days"></i>
                       <input
                         type="text"
+                        inputmode="none"
                         placeholder="Check out date"
                         name=""
-                        id=""
+                        id="date-pick"
+                        readonly
                       />
                     </div>
                   </div>
@@ -455,6 +463,7 @@
     </footer>
     <!-- footer end -->
 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
