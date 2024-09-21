@@ -328,9 +328,6 @@ input[type="submit"]:hover {
   .parent .child:nth-child(5) {
     width: 60%;
   }
-  .parent .child .wrapper:has(input[type="submit"]) {
-    height: 92%;
-  }
 }
 /* ================= hero ================ */
 
